@@ -51,7 +51,7 @@ $curl -v -X POST http://arch.homework/register -d '{"login":"stas","password":"p
 ```
 $curl -v -X POST http://arch.homework/login -d '{"login":"stas","password":"password"}'
 ```
-Ответ сервера:
+Ответ сервиса:
 ```
 * Host arch.homework:80 was resolved.
 * IPv6: (none)
@@ -79,7 +79,7 @@ $curl -v -X POST http://arch.homework/login -d '{"login":"stas","password":"pass
 ```
 $curl -v -X PUT --cookie session_id=435f1190-913f-468b-a694-bb6f0737c6ee http://arch.homework/account/deposit -d '{"delta":100}'
 ```
-Ответ сервера:
+Ответ сервиса:
 ```
 * Host arch.homework:80 was resolved.
 * IPv6: (none)
@@ -106,7 +106,7 @@ $curl -v -X PUT --cookie session_id=435f1190-913f-468b-a694-bb6f0737c6ee http://
 ```
 $curl -v  --cookie session_id=435f1190-913f-468b-a694-bb6f0737c6ee http://arch.homework/account/get
 ```
-Ответ сервера:
+Ответ сервиса:
 ```
 * Host arch.homework:80 was resolved.
 * IPv6: (none)
@@ -132,7 +132,7 @@ $curl -v  --cookie session_id=435f1190-913f-468b-a694-bb6f0737c6ee http://arch.h
 ```
 $curl -v -X POST --cookie session_id=435f1190-913f-468b-a694-bb6f0737c6ee http://arch.homework/orders/create -d '{"item":"some stuff","amount":30}'
 ```
-Ответ сервера:
+Ответ сервиса:
 ```
 * Host arch.homework:80 was resolved.
 * IPv6: (none)
