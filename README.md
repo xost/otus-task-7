@@ -2,6 +2,23 @@
 
 приложения деплоятся в пространство orders
 
+```
+git clone https://github.com/xost/otus-task-7.git
+
+cd otus-task-7
+
+cd auth
+skaffold run
+cd ../profile
+skaffold run
+cd ../account
+skaffold run
+cd ../notif
+skaffold run
+cd ../orders
+skaffold run
+
+```
 
 Зарегистрируем пользователя:
 ```
