@@ -213,8 +213,9 @@ $curl -v -X POST --cookie session_id=435f1190-913f-468b-a694-bb6f0737c6ee http:/
 select * from notif;
 ```
 ```
- id | userid |                  message
-----+--------+--------------------------------------------
+ id | userid |                             message
+----+--------+-----------------------------------------------------------------
   4 |     12 | Successfully created order with some stuff
-(1 row)
+  5 |     12 | Failed to create order due to insufficient funds in the account
+(2 rows)
 ```
